@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+	function goback() {
+		window.history.back();
+	}
+
+	function newpage() {
+		window.location.assign("F:/College%20Info/3.OOAD/Project/main.html");
+		// body...
+	}
+</script>
+</head>
+
+<style>
+	body{
+		background : linear-gradient(to bottom, #ff8c00 0%,#ff99cc 100%);
+	}
+	table{
+		height: 300px;
+	}
+	#top{
+		background-color: rgba(255,255,255,.5);
+	}
+	#desc{
+		position: absolute;
+		top: 150px;
+		font-weight: bold;
+		font-family: verdana;
+	}
+	#attrib{
+		
+		margin: 0;
+		text-align: center;
+		border-collapse: collapse;
+		width: 100%;
+		font-family: sans-serif;
+		box-sizing: 5pt;
+	}
+	.label{
+		text-align: right;
+		align-content: right;
+		font-weight: bold;
+	}
+	.forms{
+		width: 200px;
+		height: 70px;
+		padding: 6px 12px;
+ 		margin: 5px 0;
+ 		box-sizing: border-box;
+ 		background: rgba(0,0,0,.6);
+ 		color: white;
+ 		font-weight: bold;
+ 		font-size: 18px;
+	}
+	#sub{
+		width: 100%;
+	}
+	.btn{
+		height: 90px;
+		 width: 25%;
+ 		 padding: 8px 12px;
+		 margin: 5px 0;
+		 color: white;
+		 font-size: 24px;
+		 font-family: verdana;
+		 font-weight: bold;
+ 		 background-color:  #33ccff;
+ 		 border-radius: 20px;
+	}
+</style>
+<body> 
+
+	<form><input type="button" value="Back" onclick="goback()" name="back">
+		  <input type="button" value="Assign" onclick="newpage()" name="new">
+	</form>
+
+		<h1 style="position: absolute; top: 30px; right: 30%; font-family: fantasy; font-weight: bolder; color: red; width: 200px;">Delhi</h1>
+		<form>
+		<table width="100%" cellpadding="50px" cellspacing="0px;" id="top">
+			<tr>
+				<td width="50%"><img src="delhi.jpg"  width="400px" style="margin: 0; border:0; border-radius: 10px;"></td>
+				
+			</tr></table>
+
+			<table cellpadding="0px" id="attrib">
+			<tr>
+				<td class="label">Airlines  :</td><td> <select class="forms">
+					<option value=" ">Choose Airline :</option>
+					<option value=" ">Indian Airline</option>
+					<option value=" ">kingfisher</option>
+					<option value=" ">IndiGo</option>
+					<option value=" ">AirAsia India</option>
+				</select></td>
+				<td class="label">Date   :</td><td> <input type="date"  size="50px" name="date" class="forms"></td>
+				<td class="label">Time  :</td><td> <select class="forms">
+					<option value="10.00 AM ">10.00 AM</option>
+					<option value="2.00 AM ">2.00 PM</option>
+					<option value="6.00 AM ">6.00 PM</option>
+					<option value="10.00 AM ">10.00 PM</option>
+				</select></td>
+				<td class="label" >Seats   :</td><td> <input type="number" id="seat" size="50px" name="date" class="forms"></td>
+				
+			</tr>
+			</table>
+			<div class="btn1">
+
+			<p id="sub" align="center">
+			
+				<a href="payment.html">
+				<input type="button"  class="btn" value="Make Payment"></a>
+				
+				
+			</p></div>
+		</form>
+	
+	
+
+</body>
+</html>
